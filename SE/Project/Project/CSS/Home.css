@@ -1,0 +1,109 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* Optional: Add a subtle shadow */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.image {
+    width: 30%;
+    height: auto;
+    border-radius: 0;
+}
+
+.text-gradient {
+    /* Example text gradient using linear-gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #f44336, # sarıdır); /* Replace 'sarıdır' with your desired color */
+}
+
+.event-div {
+    background-color: #fff; /* Adjust background color if needed */
+}
+
+.explore-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f094c9;
+    color: #fff;
+    cursor: pointer;
+    /* Add a hover effect (example) */
+    transition: background-color 0.3s ease;
+}
+
+    .explore-button:hover {
+        background-color: #f4798e;
+    }
+
+/* Optional: Add scroll animations using a library like Animate.css */
+.fade-up {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.div {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Align content horizontally */
+    align-items: center; /* Vertically align content */
+    padding: 10px;
+    margin-bottom: 20px; /* Add spacing between divs */
+    border-radius: 5px; /* Optional rounded corners for divs */
+    background-color: #fff; /* Optional background color for divs */
+}
+.div-reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    /* Reverse the order of elements using flexbox */
+    flex-direction: row-reverse;
+}
+
+header {
+    background-color: #f0f0f0; /* Optional background color for header */
+    padding: 10px;
+    display: flex; /* Use flexbox for buttons */
+    justify-content: space-between; /* Align buttons horizontally */
+}
+
+    header button {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #eee;
+        cursor: pointer; /* Indicate clickable buttons */
+    }
