@@ -2,56 +2,66 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5; /* Light silver background */
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 98%;
+    margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
 }
 
 .div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    display: flex; /* Arrange content in a row */
+    justify-content: space-between; /* Maintain spacing between elements */
+   /* align-items: center; /* Vertically center content */
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    /* Optional: Add a subtle shadow */
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: left; /* Align text and heading to the left */
+    height: 500px;
+}
+.featured-div {
+    position: relative;
+    top: -2px;
+    left: 2px;
 }
 
+
 .image {
-    width: 30%;
+    width: 50%; /* Adjust image width as needed */
     height: auto;
     border-radius: 0;
 }
 
-.text-gradient {
-    /* Example text gradient using linear-gradient */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #f44336, # sarıdır); /* Replace 'sarıdır' with your desired color */
+.text-content {
+    font-size:20px;
+    color: steelblue; /* Dark grey text color */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+    position: absolute; /* Make text-content absolutely positioned */
+    bottom: 139px; /* Position it 20px from the bottom */
+    left: 24px; /* Align it to the left edge */
+    width: 30%; /* Make it span the full width */
 }
 
 .event-div {
-    background-color: #fff; /* Adjust background color if needed */
+    /* Optional: Add custom background color for event div if needed */
 }
 
 .explore-button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #f094c9;
+    background-color: #3399ff; /* Blue button color */
     color: #fff;
     cursor: pointer;
-    /* Add a hover effect (example) */
     transition: background-color 0.3s ease;
 }
 
     .explore-button:hover {
-        background-color: #f4798e;
+        background-color: #2eafff;
     }
 
 /* Optional: Add scroll animations using a library like Animate.css */
@@ -72,38 +82,95 @@
     }
 }
 
-.div {
-    display: flex; /* Use flexbox for side-by-side layout */
-    justify-content: space-between; /* Align content horizontally */
-    align-items: center; /* Vertically align content */
-    padding: 10px;
-    margin-bottom: 20px; /* Add spacing between divs */
-    border-radius: 5px; /* Optional rounded corners for divs */
-    background-color: #fff; /* Optional background color for divs */
-}
 .div-reverse {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #fff;
-    /* Reverse the order of elements using flexbox */
-    flex-direction: row-reverse;
 }
 
 header {
-    background-color: #f0f0f0; /* Optional background color for header */
-    padding: 10px;
-    display: flex; /* Use flexbox for buttons */
-    justify-content: space-between; /* Align buttons horizontally */
+    display: flex; /* Make header elements row-wise */
+    align-items: center; /* Vertically align header content */
+    padding: 10px 20px; /* Add some padding for header elements */
+    background-color: #e0e0ff; /* Light blue background for header */
+    justify-content: space-between; /* Horizontally space out header elements */
 }
 
-    header button {
-        padding: 5px 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #eee;
-        cursor: pointer; /* Indicate clickable buttons */
+.header-logo {
+    width: 100px; /* Adjust logo width as needed */
+    height: auto;
+    margin-right: 20px; /* Add margin for spacing between logo and heading */
+}
+
+h2 {
+    font-size: 42px; /* Set heading size to 42px */
+    margin: 0; /* Remove default margin for H1 */
+    color: #333; /* Dark grey color for H1 */
+}
+
+.featured-image {
+    width: 66%; /* Adjust image width as needed */
+    height: 539px; /* Adjust image height as needed */
+    position: absolute;
+     /* Position image absolutely within the div */
+    bottom: 3px; /* Place image at the bottom of the div */
+    right: 3px; /* Place image at the right side of the div */
+    
+}
+.animated-text {
+    top:20px;
+    font-size: 50px; /* Increased font size */
+    font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
+    background: -webkit-linear-gradient(left, #000080, #333333); /* Blue-black gradient */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    animation: animate 5s ease-in-out infinite alternate; /* Animate gradient */
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 0%;
     }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+.frame-with-swirl {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: #fff; /* White background */
+    border-radius: 50%; /* Create a circular frame */
+    position: relative; /* Enable relative positioning for layering */
+    margin: 0 auto; /* Center the frame horizontally */
+    margin-bottom: 20px; /* Add some margin below the text content */
+}
+
+    .frame-with-swirl::before {
+        content: ""; /* Empty content to create a pseudo-element */
+        position: absolute; /* Make it absolutely positioned within the frame */
+        top: 0; /* Position at the top */
+        left: 0; /* Position at the left */
+        width: 100%; /* Span the full width */
+        height: 100%; /* Span the full height */
+        border-radius: 50%; /* Inherit the circular shape from the parent */
+        background-image: url("./Images/Background.jpg"); /* Replace with your swirl image path */
+        background-size: cover; /* Stretch the swirl image to fill the pseudo-element */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        /* Optional: Add a slight black border to the pseudo-element for a defined frame */
+        border: 2px solid #000;
+        box-sizing: border-box; /* Include border width in element size calculations */
+        opacity: 0.3; /* Reduce opacity for a subtle swirl effect */
+        /* Animate the swirl (optional) */
+        animation: rotate-swirl 5s linear infinite;
+    }
+
+@keyframes rotate-swirl {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
