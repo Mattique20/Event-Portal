@@ -155,6 +155,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CSS\animation.css" />
+    <Content Include="CSS\event-Organize.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Scripts.js" />
     <Content Include="favicon.ico" />
@@ -270,6 +271,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="aspx files\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
