@@ -13,18 +13,18 @@ namespace Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
+            
             string cssPath = Server.MapPath("./Content");  // Replace with actual path
 
             if (Directory.Exists(cssPath))
             {
                 AddCssLinks(cssPath);
-            }*/
+            }
         }
 
         private void AddCssLinks(string cssPath)
         {
-            /*
+            
             StringBuilder sb = new StringBuilder();
             foreach (string file in Directory.EnumerateFiles(cssPath, "*.css"))
             {
@@ -34,7 +34,8 @@ namespace Project
 
             LiteralControl control = new LiteralControl(sb.ToString());
             // Add the control to the appropriate location in your page (e.g., header)
-            Page.Header.Controls.Add(control);*/
+            Page.Header.Controls.Add(control);
+     
         }
 
     }

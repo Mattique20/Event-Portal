@@ -59,8 +59,9 @@
 }
 
 
+
 .explore-button {
-    position:relative;
+    position: relative;
     border-style: none;
     border-color: inherit;
     border-width: medium;
@@ -69,7 +70,7 @@
     background-color: #021b6d; /* Blue button color */
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 2.3s ease-in-out forward;
     width: 248px;
     margin-top: 0px;
     left: 86px;
@@ -116,9 +117,11 @@ header {
     padding: 10px 20px; /* Add some padding for header elements */
     background-color: #e0e0ff; /* Light blue background for header */
     justify-content: space-between; /* Horizontally space out header elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
     /* Target buttons only when they are inside a header element */
-    header button {
+    header nav button {
         /* Shared styles for both buttons */
         background-color: #021B6D; /* Dark blue background color */
         color: white; /* White text color */
@@ -132,7 +135,7 @@ header {
     }
 
         /* Style change on hover */
-        header button:hover {
+        .header-button :hover {
             background-color: #2eafff; /* Lighter blue color on hover */
         }
 
@@ -294,6 +297,7 @@ h2 {
     text-align: center; /* Center text content horizontally */
     opacity: 0; /* Initial opacity for fade-up effect */
     animation: fadeInUp 1.5s ease-in-out forwards;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-left: 26px;
 }
 
