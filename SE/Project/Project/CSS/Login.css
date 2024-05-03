@@ -1,0 +1,105 @@
+﻿/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Good font choice */
+    background: url('../IMAGE/Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Style the panel */
+#Panel1 {
+    position: relative;
+    width: 420px;
+    height: 380px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: royalblue;
+    margin: auto; /* Centering the wrapper horizontally */
+    margin-top: 100px; /* Adjust this value to control the vertical position */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items horizontally to the center */
+    overflow: hidden;
+    flex-direction: column; /* Align items vertically */
+}
+
+/* Style the title */
+#Title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px; /* Adjust top margin to move the title closer to the top */
+    margin-bottom: 50px; /* Push other elements to the bottom */
+    margin-right: 20px;
+}
+
+/* Style the labels */
+label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    text-align: left; /* Align labels to the left */
+    color: #333; /* Label text color */
+}
+
+/* Style the textboxes */
+input[type="text"],
+input[type="password"] {
+    background-color: transparent;
+    width: 100%;
+    max-width: 300px; /* Limiting the width to 300px for better readability */
+    height: 40px;
+    margin: 10px 10px;
+    margin-left: 60px; /* Reduced margin for textboxes */
+    /* Gray background color */
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input boxes */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+    input[type="text"]:hover,
+    input[type="password"]:hover,
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border: 2px solid steelblue;
+    }
+/* Target ASP buttons by their ID */
+#Button1, #toReg {
+    width: auto; /* Allow buttons to adjust width based on content */
+    padding: 8px 20px; /* Reduced padding for smaller buttons */
+    background-color: #fff; /* Original button color */
+    color: #333; /* Original text color */
+    border: none;
+    border-radius: 50px; /* Round corners */
+    cursor: pointer; /* Indicate clickable behavior */
+    overflow: hidden; /* Prevent content overflow */
+    position: relative; /* Required for hover effect */
+    margin: 15px 20px 15px 55px; /* Adjust margins for spacing and horizontal alignment */
+    font-size: 15px; /* Slightly larger font size for readability */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+}
+
+/* Last button (toReg) removes horizontal margin for right alignment */
+#toReg {
+    margin-right: 0; /* Remove margin for the last button */
+}
+
+    /* Create a hover effect that fills from left to right */
+    #Button1:hover,
+    #toReg:hover {
+        background-color: steelblue; /* Blue hover effect */
+        color: #fff; /* White text color on hover */
+        transition: background-color 0.4s ease-out; /* Smooth transition */
+    }
+
+/* Optional: Add a subtle shadow for depth */
+#Button1,
+#toReg {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

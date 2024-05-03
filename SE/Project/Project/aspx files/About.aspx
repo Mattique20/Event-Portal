@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fast Event Portal</title>
   <link rel="stylesheet" href="./CSS/Home.css">
-  <script src="animations.js"></script>
 </head>
 <body>
   <form id="form1" runat="server">
