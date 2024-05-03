@@ -251,6 +251,11 @@
     <Compile Include="aspx files\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Business_Logic\ManagementSystem.cs" />
+    <Compile Include="Business_Logic\User.cs" />
+    <Compile Include="Business_Logic\_Event.cs" />
+    <Compile Include="Database_Handler\Connection.cs" />
+    <Compile Include="Database_Handler\DatabaseHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
