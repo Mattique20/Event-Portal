@@ -33,7 +33,7 @@ namespace Project.Business_Logic
             this.type = user.type;
         }
 
-        public abstract Participant getParticipant();
-        public abstract Organiser getOrganiser();
+       // public abstract Participant getParticipant();
+       // public abstract Organiser getOrganiser();
     }
 }

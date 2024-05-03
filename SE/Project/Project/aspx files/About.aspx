@@ -1,10 +1,12 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fast Event Portal</title>
-  <link rel="stylesheet" href="./CSS/Home.css">
+    <link href="../CSS/Home.css" rel="stylesheet" />
+    
 </head>
 <body>
   <form id="form1" runat="server">
@@ -20,7 +22,7 @@
       <div class="div fade-up featured-div">
         <h2 class="animated-text">About Fast</h2>
         <p class="text-content" aria-dropeffect="move">FAST University is renowned for its vibrant campus life, academic excellence, and exciting opportunities. Discover a dynamic learning environment where students thrive, supported by modern facilities and expert faculty. Explore a wide range of academic programs and engage in innovative research and projects. Join a community committed to shaping future leaders and innovators in technology and business.</p>  
-        <img src="./Images/Background.jpg" alt="FAST" class="featured-image">
+        <img src="../Images/Background.jpg" alt="FAST" class="featured-image">
       </div>
     </div>
 

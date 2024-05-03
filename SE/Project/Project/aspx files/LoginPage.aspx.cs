@@ -29,7 +29,7 @@ namespace SE
 
             if (email == "admin" && password == "12345")
             {
-                Response.Redirect("Admin.aspx");
+                Response.Redirect("About.aspx");
             }
 
             string connectionString = "Data Source=SHAHEER\\SQLEXPRESS01;Initial Catalog=SE_Project;Integrated Security=True";
