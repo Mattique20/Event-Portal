@@ -5,6 +5,7 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Web.UI.WebControls;
 using Project.Database_Handler;
+using Project.Business_Logic;
 
 namespace SE
 {
@@ -21,72 +22,15 @@ namespace SE
 
         private void BindEvents()
         {
-            // Connection string for your database
-            
-
-            // Initialize the query string
-            string query = "";
-
             // Retrieve student roll number from cookies
             string studentRollNumber = Request.Cookies["RollNumber"]?.Value;
+            int id = int.Parse(studentRollNumber);
 
-            // If student roll number is available, adjust the query to filter out events already registered by the student
-            if (!string.IsNullOrEmpty(studentRollNumber))
+            List<_Event> ee = ManagementSystem.getInstance().getAllEvents(id);
+
+            for (int i = 0; i < ee.Count; i++)
             {
-                query += @"
-                SELECT title, description, date, time, venue, Department, category 
-                FROM Event
-                WHERE event_id NOT IN (
-                SELECT event_id
-                FROM EventRegistration
-                WHERE student_roll_number = @studentRollNumber
-            )";
-            }
-
-            // Create a connection object
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                // Create a command object with the query and connection
-                SqlCommand command = new SqlCommand(query, connection);
-
-                // Add parameter if student roll number is available
-                if (!string.IsNullOrEmpty(studentRollNumber))
-                {
-                    command.Parameters.AddWithValue("@studentRollNumber", studentRollNumber);
-                }
-
-                try
-                {
-                    // Open the database connection
-                    connection.Open();
-
-                    // Execute the query and retrieve the data
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        // Iterate through the result set
-                        while (reader.Read())
-                        {
-                            // Retrieve event details from the result set
-                            string title = reader["title"].ToString();
-                            string description = reader["description"].ToString();
-                            DateTime date = Convert.ToDateTime(reader["date"]);
-                            TimeSpan time = TimeSpan.Parse(reader["time"].ToString());
-                            string venue = reader["venue"].ToString();
-                            string department = reader["Department"].ToString();
-                            string category = reader["category"].ToString();
-
-                            // Create a card for the event and add it to the eventContainer div
-                            AddEventCard(title, description, date, time, venue, department, category);
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    // Handle any exceptions
-                    // You can log the exception or show an error message to the user
-                    // For simplicity, this example will re-throw the exception
-                    Console.WriteLine("Hi");
-                }
+                AddEventCard(ee[i].name, ee[i].description, ee[i].date, ee[i].time, ee[i].venue, ee[i].department, ee[i].category);
             }
         }
 

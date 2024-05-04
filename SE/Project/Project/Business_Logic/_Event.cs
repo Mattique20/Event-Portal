@@ -11,86 +11,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using Project.Database_Handler;
 
 namespace Project.Business_Logic
 {
     public class _Event
     {
-        string id { get; set; }
-        string name { get; set; }
-        string type { get; set; }
-        int numberOfParticipants { get; set; }
-        int teamSize { get; set; }
-        List<User> organisers;
-        List<User> participants;
-        DateTime startTime { get; set; }
-        DateTime endTime { get; set; }
-        private bool isRegistrationOpen { get; set; }
-        private bool isEventStarted { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public string venue { get; set; }
+        public TimeSpan time { get; set; }
+        public DateTime date { get; set; }
+        public List<User> registered_participants;
+        public int organiser_faculty_id { get; set; }
+        public string department {  get; set; }
+        public string category { get; set; }
 
-        public _Event(string id, string name, string type, int numberOfParticipants, int teamSize, DateTime startTime, DateTime endTime)
+        public _Event(int id, string name, string type, string venue, string department, string category, TimeSpan time, DateTime date, int orgId)
         {
+            registered_participants = new List<User>();
             this.id = id;
             this.name = name;
-            this.type = type;
-            this.numberOfParticipants = numberOfParticipants;
-            this.teamSize = teamSize;
-            this.startTime = startTime;
-            this.endTime = endTime;
-            this.isRegistrationOpen = true;
-            this.isEventStarted = false;
+            this.description = type;
+            this.venue = venue;
+            this.department = department;
+            this.category = category;
+            this.date = date;
+            this.time = time;
+            this.organiser_faculty_id = orgId;
         }
-        public void setEvent(_Event e)
+
+        public _Event getEvent()
         {
-            this.id = e.id;
-            this.name = e.name;
-            this.type = e.type;
-            this.numberOfParticipants = e.numberOfParticipants;
-            this.teamSize = e.teamSize;
-            this.startTime = e.startTime;
-            this.endTime = e.endTime;
-            this.isRegistrationOpen = e.isRegistrationOpen;
-            this.isEventStarted = e.isEventStarted;
+            return null;
+            //_Event e = DatabaseHandler.getInstance().
         }
 
-        public void addParticipant(User p)
+        public void storeEvent() 
         {
-            participants.Add(p);
+            DatabaseHandler.getInstance().storeEvent(this);
         }
-
-        public void removeParticipant(User p) 
+        public void registerUser(User user)
         {
-            participants.Remove(p);
+            registered_participants.Add(user);
         }
-
-        public void addOrganiser(User o)
-        {
-            organisers.Add(o);
-        }
-
-        public void removeOrganiser(User o)
-        {
-            organisers.Remove(o);
-        }
-
-        public void addFeedback(/*Feedback*/) { }
-
-        public void openRegistration() { isRegistrationOpen = true; }
-
-        public void closeRegistration() {  isRegistrationOpen = false; }
-
-        public void startEvent() { isEventStarted = true; }
-
-        public void endEvent() {  isEventStarted = false; }
-
-        public void declareWinners(List<User> winners) 
-        {
-            for (int i = 0; i < winners.Count; i++)
-            {
-                winners[i].getParticipant().addWin();
-            }    
-        }
-
-        public void generateEventReport() { }
     }
 }

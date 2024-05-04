@@ -12,14 +12,11 @@ namespace Project.Business_Logic
 {
     public class Participant : User
     {
-        int activeEventsRegistered;
-        int allTimeRegisteredEvents;
-        int disqualifications;
-        int winnings;
-        int runnerUps;
+        string roll_number;
         
-        public Participant(string id, string name, string password, string email, string rollNumber, string type) : base(id, name, password, email, rollNumber, type)
+        public Participant(string id, string name, string password, string email, string rollNumber, string type) : base(id, name, password, email, type)
         {
+            this.roll_number = rollNumber;
         }
         public override Organiser getOrganiser()
         {
@@ -28,33 +25,6 @@ namespace Project.Business_Logic
         public override Participant getParticipant()
         {
             return this;
-        }
-
-        public void addEvent()
-        {
-            activeEventsRegistered++;
-            allTimeRegisteredEvents++;
-        }
-
-        public void removeEvent()
-        {
-            activeEventsRegistered--;
-            allTimeRegisteredEvents--;
-        }
-        public void addDisqualify()
-        {
-            activeEventsRegistered--;
-            disqualifications++;
-        }
-        public void addWin()
-        {
-            activeEventsRegistered--;
-            winnings++;
-        }
-        public void addRunnerUp()
-        {
-            activeEventsRegistered--;
-            runnerUps++;
         }
     }
 }

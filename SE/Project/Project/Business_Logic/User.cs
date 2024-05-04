@@ -11,16 +11,14 @@ namespace Project.Business_Logic
         string name { set; get; }
         string password { set; get; }
         string email { set; get; }
-        string rollNumber { set; get; }
         string type { set; get; }
 
-        public User(string id, string name, string password, string email, string rollNumber, string type)
+        public User(string id, string name, string password, string email, string type)
         { 
             this.id = id;
             this.name = name;
             this.password = password;
             this.email = email;
-            this.rollNumber = rollNumber;
             this.type = type;
         }
        public abstract Participant getParticipant();
