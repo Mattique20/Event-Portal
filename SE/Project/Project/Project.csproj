@@ -252,6 +252,9 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Business_Logic\ManagementSystem.cs" />
+    <Compile Include="Business_Logic\Organiser.cs" />
+    <Compile Include="Business_Logic\Participant.cs" />
+    <Compile Include="Business_Logic\Report.cs" />
     <Compile Include="Business_Logic\User.cs" />
     <Compile Include="Business_Logic\_Event.cs" />
     <Compile Include="Database_Handler\Connection.cs" />
