@@ -6,6 +6,33 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" href="..\css\Register.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif; /* Good font choice */
+    background: url('../images/Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+    /* Style the panel */
+    #Panel1 {
+    position: relative;
+    width: 420px;
+    height: 580px; /* Reduced height for a more compact layout (optional) */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: royalblue;
+    margin: auto; /* Centering the wrapper horizontally */
+    margin-top: 60px; /* Adjust this value to control the vertical position */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items horizontally to the center */
+    overflow: hidden;
+    flex-direction: column; /* Align items vertically */
+    }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
