@@ -5,88 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <style>
-        /* CSS for card layout */
-        .card {
-            background-color: #fff;
-            border: 1px solid #eaeaea;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            width: calc(33.33% - 20px);
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .card h3 {
-            margin-top: 0;
-            font-size: 18px;
-            color: #333;
-        }
-
-        .card p {
-            margin: 10px 0;
-            font-size: 14px;
-            color: #666;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .filter-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .filter-section label {
-            margin-right: 10px;
-        }
-
-        .filter-section select,
-        .filter-section input[type="date"],
-        .filter-section input[type="text"],
-        .filter-section button {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
-
-        .filter-section button {
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-            border: none;
-        }
-
-        .filter-section button:hover {
-            background-color: #0056b3;
-        }
-
-        .event-cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        
-
-    </style>
+    <link href="../CSS/StudentEvent.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         // JavaScript function to filter events by department
@@ -235,6 +154,14 @@
     <form id="form1" runat="server">
         <div class="container">
             <!-- Filter Dropdown -->
+            <header>
+             <img src="../Images/logo.png" alt="FAST Logo" class="header-logo">  
+             <h1>Fast Event Portal</h1>
+             <nav>  
+             <asp:Button ID="btnLogin" runat="server" CssClass="btnLogin" Text="Login" OnClick="btnLogin_Click" />
+              <asp:Button ID="btnhome" runat="server" CssClass="btnhome" Text="Home" onClick="btnhome_Click"/>
+             </nav>
+         </header>
             <div class="filter-section">
                 <label for="department">Department:</label>
                 <select id="department" onchange="filterByDepartment()">
@@ -249,8 +176,8 @@
                 <button type="button" onclick="search()">Search</button>
                 
                 
-                <button type="button" onclick="viewRegisteredEvents()">View Registered Events</button>
-                <button type="button" onclick="viewBookmarkedEvents()">View Bookmarked Events</button>
+                <button type="button" onclick="viewRegisteredEvents()">Registered</button>
+                <button type="button" onclick="viewBookmarkedEvents()">Bookmarks</button>
             </div>
             
             <!-- Event Cards -->
