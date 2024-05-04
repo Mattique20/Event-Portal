@@ -167,6 +167,7 @@
     <Content Include="CSS\chat.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Login.css" />
+    <Content Include="CSS\Organizer.css" />
     <Content Include="CSS\RegEvent.css" />
     <Content Include="CSS\Register.css" />
     <Content Include="CSS\Scripts.js" />
@@ -175,6 +176,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\app.jpg" />
     <Content Include="Images\Background.jpg" />
+    <Content Include="Images\hackathon.jpg" />
     <Content Include="Images\output_image.jpeg" />
     <Content Include="Images\speed.jpg" />
     <Content Include="Images\web.jpg" />

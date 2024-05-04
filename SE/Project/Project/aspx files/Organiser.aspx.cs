@@ -517,6 +517,16 @@ namespace SE
             Response.Redirect(Request.Url.AbsoluteUri);
         }
 
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnevents_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
