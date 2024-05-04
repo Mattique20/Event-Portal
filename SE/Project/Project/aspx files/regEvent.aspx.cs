@@ -65,7 +65,7 @@ namespace No
 
                     // Execute the query and get the result
                     int count = (int)command.ExecuteScalar();
-
+                    connection.Close();
                     // If count > 0, student is registered for the event
                     return count > 0;
                 }
@@ -89,7 +89,7 @@ namespace No
 
         private void InsertRegistration(int rollNumber, string eventTitle)
         {
-            string connectionString = "Data Source=SHAHEER\\SQLEXPRESS01;Initial Catalog=SE_Project;Integrated Security=True";
+            string connectionString=Connection.GetInstance().ConnectionString;
             string query = "INSERT INTO EventRegistration (registration_id, event_id, student_roll_number) " +
                "SELECT NEXT VALUE FOR RegistrationSequence, event_id, @RollNumber FROM Event WHERE title = @Title";
 
@@ -103,8 +103,19 @@ namespace No
 
                     connection.Open();
                     command.ExecuteNonQuery();
+                    connection.Close();
                 }
             }
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoginPage.aspx");
+        }
+
+        protected void btnhome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("About.aspx");
         }
     }
 }

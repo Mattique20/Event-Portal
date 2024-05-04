@@ -1,0 +1,79 @@
+﻿/* Styles for the header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: lightsteelblue;
+    background-image: linear-gradient(to right, steelblue, navy);
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the logo */
+.header-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Styles for the h1 inside header */
+header h1 {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the navigation buttons */
+.btnLogin, .btnhome {
+    background-color: skyblue;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    /* Styles for hover effect on navigation buttons */
+    .btnLogin:hover, .btnhome:hover {
+        background-color: steelblue;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+/* Styles for the content area */
+.content {
+    margin: 20px;
+}
+
+/* Styles for the form title */
+#pageTitle {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: steelblue;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Styles for the register button */
+#btnConfirmRegistration {
+    align-items:center;
+    background-color: lightsteelblue;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    /* Styles for hover effect on the register button */
+    #btnConfirmRegistration:hover {
+        background-color: steelblue;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }

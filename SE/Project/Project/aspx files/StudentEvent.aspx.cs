@@ -34,9 +34,9 @@ namespace SE
             if (!string.IsNullOrEmpty(studentRollNumber))
             {
                 query += @"
-            SELECT title, description, date, time, venue, Department, category 
-        FROM Event
-            WHERE event_id NOT IN (
+                SELECT title, description, date, time, venue, Department, category 
+                FROM Event
+                WHERE event_id NOT IN (
                 SELECT event_id
                 FROM EventRegistration
                 WHERE student_roll_number = @studentRollNumber
@@ -149,9 +149,14 @@ namespace SE
             return eventId;
         }
 
-       
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LoginPage.aspx");
+        }
 
-
-
+        protected void btnhome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("About.aspx");
+        }
     }
 }
