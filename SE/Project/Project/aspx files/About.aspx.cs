@@ -38,7 +38,16 @@ namespace Project
             Page.Header.Controls.Add(control);
      
         }
-        
 
+        protected void btnExplore_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StudentEvent.aspx");
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CustomerSupport.aspx");
+        }
     }
 }
