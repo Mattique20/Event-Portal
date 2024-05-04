@@ -150,8 +150,8 @@ header h1 {
 
 .header-logo {
     width: 100px; /* Adjust logo width as needed */
-    height: auto;
-    margin-right: 20px; /* Add margin for spacing between logo and heading */
+    height: 50px;
+    margin-right: 50px; /* Add margin for spacing between logo and heading */
 }
 
 h2 {

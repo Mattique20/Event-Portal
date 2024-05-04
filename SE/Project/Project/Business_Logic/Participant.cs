@@ -15,7 +15,7 @@ namespace Project.Business_Logic
         public Participant(string id, string name, string password, string email, string rollNumber, string type) : base(id, name, password, email, rollNumber, type)
         {
         }
-
+        /*
         public override Organiser getOrganiser()
         {
             throw new NotImplementedException("Participant is not an organiser");
@@ -24,6 +24,6 @@ namespace Project.Business_Logic
         public override Participant getParticipant()
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

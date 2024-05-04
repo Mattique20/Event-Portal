@@ -11,7 +11,7 @@
 <body>
   <form id="form1" runat="server">
     <header>
-      <img src="../Images/logo.jpg" alt="FAST Logo" class="header-logo">  
+      <img src="../Images/logo.png" alt="FAST Logo" class="header-logo">  
         <h1>Fast Event Portal</h1>
       <nav>  
         <asp:Button ID="btnLogin" runat="server" Text="Login" />
