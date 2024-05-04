@@ -176,7 +176,7 @@
     <Content Include="Images\app.jpg" />
     <Content Include="Images\Background.jpg" />
     <Content Include="Images\output_image.jpeg" />
-    <Content Include="Images\speed programming.jpg" />
+    <Content Include="Images\speed.jpg" />
     <Content Include="Images\web.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
