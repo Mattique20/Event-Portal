@@ -115,29 +115,38 @@ header {
     display: flex; /* Make header elements row-wise */
     align-items: center; /* Vertically align header content */
     padding: 10px 20px; /* Add some padding for header elements */
-    background-color: #e0e0ff; /* Light blue background for header */
+    background-color: lightsteelblue;
+    background-image: linear-gradient(to right, steelblue, navy);
     justify-content: space-between; /* Horizontally space out header elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
     /* Target buttons only when they are inside a header element */
-    header nav button {
-        /* Shared styles for both buttons */
-        background-color: #021B6D; /* Dark blue background color */
-        color: white; /* White text color */
-        font-size: 16px; /* Adjust font size as needed */
-        padding: 10px 20px; /* Add some padding for spacing */
-        border: none; /* Remove default button border */
-        border-radius: 5px; /* Add rounded corners */
-        cursor: pointer; /* Indicate clickable buttons */
-        margin: 5px; /* Add some margin for spacing between buttons (optional) */
-        transition: background-color 0.3s ease; /* Add hover effect */
+#btnLogin, #btnRegister {
+    /* Shared styles for both buttons */
+    background-color:skyblue; /* Dark blue background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 10px 20px; /* Add some padding for spacing */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable buttons */
+    margin: 5px; /* Add some margin for spacing between buttons (optional) */
+    transition: background-color 0.3s ease; /* Add hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+    /* Style change on hover */
+    #btnLogin:hover, #btnRegister:hover {
+        background-color: steelblue; /* Lighter blue color on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
     }
 
-        /* Style change on hover */
-        .header-button :hover {
-            background-color: #2eafff; /* Lighter blue color on hover */
-        }
+
+header h1 {
+    color: white; /* Text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
 
 .header-logo {
     width: 100px; /* Adjust logo width as needed */
