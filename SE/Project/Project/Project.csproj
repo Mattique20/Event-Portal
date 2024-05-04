@@ -138,9 +138,7 @@
   <ItemGroup>
     <Content Include="aspx files\About.aspx" />
     <Content Include="aspx files\Admin.aspx" />
-    <Content Include="aspx files\Contact.aspx" />
     <Content Include="aspx files\CustomerSupport.aspx" />
-    <Content Include="aspx files\FAQ.aspx" />
     <Content Include="aspx files\HireOrganiser.aspx" />
     <Content Include="aspx files\LoginPage.aspx" />
     <Content Include="aspx files\Organiser.aspx" />
@@ -166,6 +164,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CSS\chat.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\Register.css" />
@@ -254,26 +253,12 @@
     <Compile Include="aspx files\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="aspx files\Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="aspx files\Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="aspx files\CustomerSupport.aspx.cs">
       <DependentUpon>CustomerSupport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="aspx files\CustomerSupport.aspx.designer.cs">
       <DependentUpon>CustomerSupport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="aspx files\FAQ.aspx.cs">
-      <DependentUpon>FAQ.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="aspx files\FAQ.aspx.designer.cs">
-      <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
     <Compile Include="aspx files\HireOrganiser.aspx.cs">
       <DependentUpon>HireOrganiser.aspx</DependentUpon>

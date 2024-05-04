@@ -72,7 +72,7 @@ namespace SE
                     reader.Close();
 
                     // Redirect to Home.aspx
-                    Response.Redirect("StudentEvent.aspx");
+                    Response.Redirect("About.aspx");
                 }
 
                 else
