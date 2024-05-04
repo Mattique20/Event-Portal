@@ -23,17 +23,7 @@ namespace Project.Business_Logic
             this.rollNumber = rollNumber;
             this.type = type;
         }
-        public void setUser(User user)
-        {
-            this.id = user.id;
-            this.name = user.name;
-            this.password = user.password;
-            this.email = user.email;
-            this.rollNumber = user.rollNumber;
-            this.type = user.type;
-        }
-
-       // public abstract Participant getParticipant();
-       // public abstract Organiser getOrganiser();
+       public abstract Participant getParticipant();
+       public abstract Organiser getOrganiser();
     }
 }

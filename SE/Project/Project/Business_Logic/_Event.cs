@@ -1,10 +1,7 @@
 ﻿/*
  TODO : 
-- organisers
-- participants
 - dbManagement
 - Feedback
-- declare winneres
 - genrate report
  */
 
@@ -24,8 +21,8 @@ namespace Project.Business_Logic
         string type { get; set; }
         int numberOfParticipants { get; set; }
         int teamSize { get; set; }
-        /*List<User> organisers*/
-        /*List<User> participants*/
+        List<User> organisers;
+        List<User> participants;
         DateTime startTime { get; set; }
         DateTime endTime { get; set; }
         private bool isRegistrationOpen { get; set; }
@@ -56,24 +53,24 @@ namespace Project.Business_Logic
             this.isEventStarted = e.isEventStarted;
         }
 
-        public void addParticipant(/*User p*/)
+        public void addParticipant(User p)
         {
-            //participants.add(p);
+            participants.Add(p);
         }
 
-        public void removeParticipant(/*User p*/) 
+        public void removeParticipant(User p) 
         {
-            //participants.remove(p);
+            participants.Remove(p);
         }
 
-        public void addOrganiser(/*User o*/)
+        public void addOrganiser(User o)
         {
-            //participants.add(o);
+            organisers.Add(o);
         }
 
-        public void removeOrganiser(/*User o*/)
+        public void removeOrganiser(User o)
         {
-            //participants.remove(o);
+            organisers.Remove(o);
         }
 
         public void addFeedback(/*Feedback*/) { }
@@ -86,7 +83,13 @@ namespace Project.Business_Logic
 
         public void endEvent() {  isEventStarted = false; }
 
-        public void declareWinners() { }
+        public void declareWinners(List<User> winners) 
+        {
+            for (int i = 0; i < winners.Count; i++)
+            {
+                winners[i].getParticipant().addWin();
+            }    
+        }
 
         public void generateEventReport() { }
     }
