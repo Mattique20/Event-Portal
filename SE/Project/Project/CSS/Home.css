@@ -59,7 +59,7 @@
 
 
 
-.explore-button {
+.explore-button, #SupportBtn {
     position: relative;
     border-style: none;
     border-color: inherit;
@@ -387,7 +387,7 @@ h2 {
     margin-top: 20px;
 }
 
-    .SupportBtn button {
+    .SupportBtn #BtnSupport {
         background-color: #007bff;
         color: #fff;
         border: none;
@@ -396,6 +396,6 @@ h2 {
         cursor: pointer;
     }
 
-        .SupportBtn button:hover {
+        #BtnSupport :hover {
             background-color: #0056b3;
         }

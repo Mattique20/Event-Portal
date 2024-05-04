@@ -1,4 +1,4 @@
-﻿
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Project.About" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +37,7 @@
         <div class="event-slider">
           <asp:Button ID="btnPrev" runat="server" CssClass="prev-button" />
           <asp:Button ID="btnNext" runat="server" CssClass="next-button" />
-          <asp:Button ID="btnExplore" runat="server" CssClass="explore-button" Text="Explore Events" />
+          <asp:Button ID="btnExplore" runat="server" CssClass="explore-button" Text="Explore Events"  OnClick="btnExplore_Click"/>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
             </div>
             <!-- Add more FAQ items as needed -->
             <div class="SupportBtn">
-                <a href="..\aspx files\CustomerSupport.aspx"><button>Support</button></a>
+                <asp:Button ID="BtnSupport" runat="server" CssClass="btnSupport" Text="Support"  OnClick="Button3_Click"/>
             </div>
         </div>
     <script src="../CSS/Scripts.js"></script>
