@@ -5,45 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>ChatGPT Customer Support</title>
-    <style>
-        /* Styles for the chatbot interface */
-        #chat-container {
-            width: 300px;
-            height: 400px;
-            border: 1px solid #ccc;
-            overflow-y: scroll;
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f9f9f9;
-        }
-
-        #input-container {
-            width: 100%;
-        }
-
-        #user-input {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            margin-top: 10px;
-        }
-
-        #send-button {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            margin-top: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+   <link href="../CSS/chat.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
+       <header>
+      <img src="../Images/logo.png" alt="FAST Logo" class="header-logo">  
+        <h1>Fast Event Portal</h1>
+      <nav>  
+        <asp:Button ID="btnHome" runat="server" Text="Home" />
+        <asp:Button ID="btnevents" runat="server" Text="Events" />
+      </nav>
+    </header>
+        <h1 style="text-align: center;">ChatGPT Customer Support</h1>
         <div>
-            <div id="chat-container"></div>
+            
+            <div id="chat-container">
+                
+
+            </div>
             <div id="input-container">
                 <input type="text" id="user-input" placeholder="Type your message here..." />
                 <button type="button" id="send-button">Send</button>

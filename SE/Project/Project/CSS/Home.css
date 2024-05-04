@@ -14,7 +14,7 @@
 .div {
     display: flex; /* Arrange content in a row */
     justify-content: space-between; /* Maintain spacing between elements */
-   /* align-items: center; /* Vertically center content */
+    /* align-items: center; /* Vertically center content */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -23,6 +23,7 @@
     text-align: left; /* Align text and heading to the left */
     height: 500px;
 }
+
 .featured-div {
     position: relative;
     top: -2px;
@@ -34,11 +35,10 @@
     width: 50%; /* Adjust image width as needed */
     height: auto;
     border-radius: 0;
-
 }
 
 .text-content {
-    font-size:20px;
+    font-size: 20px;
     color: steelblue; /* Dark grey text color */
     line-height: 1.4; /* Adjust line spacing for better readability */
     position: absolute; /* Make text-content absolutely positioned */
@@ -54,7 +54,6 @@
     background-color: #fff;
     padding: 10px;
     margin: 5px;
-    
     /* Other existing styles for .event-div */
 }
 
@@ -105,7 +104,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 94%;
-    margin: 0 auto; 
+    margin: 0 auto;
     border-radius: 5px;
 }
 
@@ -121,10 +120,10 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-    /* Target buttons only when they are inside a header element */
+/* Target buttons only when they are inside a header element */
 #btnLogin, #btnRegister {
     /* Shared styles for both buttons */
-    background-color:skyblue; /* Dark blue background color */
+    background-color: skyblue; /* Dark blue background color */
     color: white; /* White text color */
     font-size: 16px; /* Adjust font size as needed */
     padding: 10px 20px; /* Add some padding for spacing */
@@ -150,8 +149,8 @@ header h1 {
 
 .header-logo {
     width: 100px; /* Adjust logo width as needed */
-    height: 50px;
-    margin-right: 50px; /* Add margin for spacing between logo and heading */
+    height: auto;
+    margin-right: 20px; /* Add margin for spacing between logo and heading */
 }
 
 h2 {
@@ -165,13 +164,13 @@ h2 {
     width: 66%; /* Adjust image width as needed */
     height: 539px; /* Adjust image height as needed */
     position: absolute;
-     /* Position image absolutely within the div */
+    /* Position image absolutely within the div */
     bottom: 3px; /* Place image at the bottom of the div */
     right: 3px; /* Place image at the right side of the div */
-    
 }
+
 .animated-text {
-    top:20px;
+    top: 20px;
     font-size: 50px; /* Increased font size */
     font-family: 'Montserrat', sans-serif; /* Change font to Montserrat */
     background: -webkit-linear-gradient(left, #000080, #333333); /* Blue-black gradient */
@@ -189,6 +188,7 @@ h2 {
         background-position: 100% 0%;
     }
 }
+
 .frame-with-swirl {
     width: 200px; /* Adjust width as needed */
     height: 200px; /* Adjust height as needed */
@@ -227,6 +227,7 @@ h2 {
         transform: rotate(180deg);
     }
 }
+
 .event-slider {
     width: 50%; /* Make slider full width */
     margin-bottom: 20px; /* Add some bottom margin */
@@ -235,7 +236,7 @@ h2 {
 }
 
 .event-card-container {
-    position:relative;
+    position: relative;
     display: flex; /* Arrange event cards in a row */
     overflow-x: scroll; /* Enable horizontal scrolling for slider effect */
     scroll-snap-type: x mandatory; /* Enable snapping to each card */
@@ -245,7 +246,6 @@ h2 {
     height: 360px;
     top: -287px;
     left: 622px;
-
 }
 
 .event-card {
@@ -290,6 +290,7 @@ h2 {
 .next-button {
     right: 10px; /* Position right button */
 }
+
 .event-content {
     flex: 2; /* Allow content to occupy more space (optional) */
     padding: 20px;
@@ -313,14 +314,13 @@ h2 {
     .div-reverse.fade-up h2 {
         font-size: 36px; /* Adjust heading size as needed */
         margin-bottom: 10px; /* Add spacing below heading */
-        margin-left:-90px;
-        }
+        margin-left: -90px;
+    }
 
     .div-reverse.fade-up p {
         font-size: 22px; /* Adjust paragraph font size as needed */
         line-height: 1.5;
-
-}
+    }
 
     .div-reverse.fade-up a {
         color: #021b6d; /* Blue color for the link */
@@ -350,3 +350,52 @@ h2 {
     opacity: 0.5; /* Reduce opacity for disabled buttons */
     cursor: default; /* Change cursor style to indicate non-interactivity */
 }
+
+.container2 {
+    width: 94%;
+    margin: 25px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.FAQHEAD {
+    text-align: center;
+    color: #333;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.answer {
+    margin-top: 10px;
+    color: #666;
+}
+
+.SupportBtn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .SupportBtn button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .SupportBtn button:hover {
+            background-color: #0056b3;
+        }

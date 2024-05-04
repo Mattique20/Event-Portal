@@ -47,7 +47,29 @@
       <p>Learn more about our mission and team.</p>
       <asp:HyperLink ID="lnkReadMore" runat="server" NavigateUrl="#">Read More</asp:HyperLink>
     </div>
-
+     <div class="container2">
+            <h1 class="FAQHEAD">Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <div class="question">What events are happening at Fast University Islamabad?</div>
+                <div class="answer">You can find a variety of events including workshops, seminars, cultural festivals, academic conferences, and more. Check our event calendar for upcoming events.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">How can I register for an event?</div>
+                <div class="answer">Registration for events can be done through our online portal. Simply navigate to the event page and follow the registration instructions provided.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Are there any fees for attending events?</div>
+                <div class="answer">The majority of our events are free to attend. However, some special events or workshops may have a registration fee. This will be clearly mentioned on the event page.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Can I submit my own event?</div>
+                <div class="answer">Yes, we welcome event submissions from students, faculty, and external organizations. Please contact our event management team for guidelines on submitting your event.</div>
+            </div>
+            <!-- Add more FAQ items as needed -->
+            <div class="SupportBtn">
+                <a href="..\aspx files\CustomerSupport.aspx"><button>Support</button></a>
+            </div>
+        </div>
     <script src="../CSS/Scripts.js"></script>
   </form>
 </body>

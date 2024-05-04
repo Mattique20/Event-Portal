@@ -137,8 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aspx files\About.aspx" />
+    <Content Include="aspx files\Admin.aspx" />
+    <Content Include="aspx files\Contact.aspx" />
+    <Content Include="aspx files\CustomerSupport.aspx" />
+    <Content Include="aspx files\FAQ.aspx" />
+    <Content Include="aspx files\HireOrganiser.aspx" />
     <Content Include="aspx files\LoginPage.aspx" />
+    <Content Include="aspx files\Organiser.aspx" />
+    <Content Include="aspx files\regEvent.aspx" />
     <Content Include="aspx files\Register.aspx" />
+    <Content Include="aspx files\RegisteredEvents.aspx" />
+    <Content Include="aspx files\StudentEvent.aspx" />
+    <Content Include="aspx files\ViewFeedback.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -237,6 +247,41 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="aspx files\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\CustomerSupport.aspx.cs">
+      <DependentUpon>CustomerSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\CustomerSupport.aspx.designer.cs">
+      <DependentUpon>CustomerSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\HireOrganiser.aspx.cs">
+      <DependentUpon>HireOrganiser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\HireOrganiser.aspx.designer.cs">
+      <DependentUpon>HireOrganiser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="aspx files\LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -244,12 +289,47 @@
     <Compile Include="aspx files\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="aspx files\Organiser.aspx.cs">
+      <DependentUpon>Organiser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\Organiser.aspx.designer.cs">
+      <DependentUpon>Organiser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\regEvent.aspx.cs">
+      <DependentUpon>regEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\regEvent.aspx.designer.cs">
+      <DependentUpon>regEvent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="aspx files\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="aspx files\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\RegisteredEvents.aspx.cs">
+      <DependentUpon>RegisteredEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\RegisteredEvents.aspx.designer.cs">
+      <DependentUpon>RegisteredEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\StudentEvent.aspx.cs">
+      <DependentUpon>StudentEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\StudentEvent.aspx.designer.cs">
+      <DependentUpon>StudentEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx files\ViewFeedback.aspx.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx files\ViewFeedback.aspx.designer.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Business_Logic\ManagementSystem.cs" />
     <Compile Include="Business_Logic\Organiser.cs" />
