@@ -1,0 +1,121 @@
+﻿body {
+    font-family: Arial, sans-serif; /* Good font choice */
+    background: url('../images/Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+header {
+    display: flex; /* Make header elements row-wise */
+    align-items: center; /* Vertically align header content */
+    padding: 10px 20px; /* Add some padding for header elements */
+    background-color: lightsteelblue;
+    background-image: linear-gradient(to right, steelblue, navy);
+    justify-content: space-between; /* Horizontally space out header elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Target buttons only when they are inside a header element */
+#btnevents, #btnHome {
+    /* Shared styles for both buttons */
+    background-color: skyblue; /* Dark blue background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 10px 20px; /* Add some padding for spacing */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable buttons */
+    margin: 5px; /* Add some margin for spacing between buttons (optional) */
+    transition: background-color 0.3s ease; /* Add hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+    /* Style change on hover */
+    #btnevents:hover, #btnHome:hover {
+        background-color: steelblue; /* Lighter blue color on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
+    }
+
+
+header h1 {
+    color: white; /* Text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.header-logo {
+    width: 100px; /* Adjust logo width as needed */
+    height: auto;
+    margin-right: 20px; /* Add margin for spacing between logo and heading */
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+select,
+input[type="text"], input[type="Password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+    select:focus,
+    input[type="text"]:focus, input[type="Password"]:focus {
+        outline: none;
+        border-color: #6c5ce7;
+    }
+
+    input[type="text"]::placeholder, input[type="Password"]::placeholder {
+        color: black;
+    }
+
+    select option {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+#btnHire {
+    display: block;
+    width: 200px; /* Adjusted width for better alignment */
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: navy; /* Green color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto; /* Added margin for spacing and centering */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    #btnHire:hover {
+        background-color: steelblue; /* Darker green on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+

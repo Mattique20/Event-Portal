@@ -249,14 +249,15 @@ h2 {
 }
 
 .event-card {
-    width: 250px; /* Adjust card width as needed */
-    margin-right: 20px; /* Add spacing between cards */
+    margin:10px;
+    display: flex; /* Arrange content in a row */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Maintain spacing between elements */
     background: -webkit-linear-gradient(right, #000080, #0041a4); /* Navy to cobalt blue gradient */
     color: white; /* White text color */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px #000; /* Subtle shadow */
-    scroll-snap-align: start; /* Align cards to the left edge of the viewport */
     cursor: pointer; /* Indicate clickable cards */
 }
 
@@ -266,9 +267,25 @@ h2 {
     }
 
     .event-card p {
+        /* Set a maximum width for the description text */
+        max-width: 200px; /* Adjust this value based on your card width */
+        /* Optional: Allow text to wrap if it overflows */
+        word-wrap: break-word;
+        /* Optional: Add ellipsis (...) if text overflows */
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 14px;
         line-height: 1.5; /* Adjust line spacing for readability */
+        margin-bottom: 10px; /* Add margin below paragraphs */
     }
+
+    .event-card img {
+        width: 100%; /* Make image fill the card width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Rounded corners for image */
+        margin-bottom: 10px; /* Add margin below image */
+    }
+
 
 .prev-button,
 .next-button {
