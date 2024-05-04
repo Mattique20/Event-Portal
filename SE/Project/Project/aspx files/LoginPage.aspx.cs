@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Project.Database_Handler;
 
 namespace SE
 {
@@ -32,7 +33,7 @@ namespace SE
                 Response.Redirect("About.aspx");
             }
 
-            string connectionString = "Data Source=SHAHEER\\SQLEXPRESS01;Initial Catalog=SE_Project;Integrated Security=True";
+            string connectionString = Connection.GetInstance().ConnectionString;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
