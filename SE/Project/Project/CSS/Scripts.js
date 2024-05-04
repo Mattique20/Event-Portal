@@ -7,11 +7,11 @@
 });
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
 const eventCards = [
-    // Replace with your actual event data (title, description, etc.)
-    { title: "Event 1", description: "This is the description for event 1." },
-    { title: "Event 2", description: "This is the description for event 2." },
-    { title: "Event 3", description: "This is the description for event 3." },
+    { title: "Speed Programming", image: "D:\project\Event-Portal\SE\Project\Project\Images\app.jpg", description: "Speed programming competitions test coding skills under time pressure, evaluating correctness, efficiency, and speed across multiple rounds." },
+    { title: "Event 2", image: "event_2.jpg", description: "This is the description for event 2." },
+    { title: "Event 3", image: "event_3.jpg", description: "This is the description for event 3." },
 ];
 
 const eventCardContainer = document.querySelector(".event-card-container");
@@ -19,7 +19,15 @@ const eventCardContainer = document.querySelector(".event-card-container");
 eventCards.forEach((event) => {
     const card = document.createElement("div");
     card.classList.add("event-card");
-    card.innerHTML = `<h3>${event.title}</h3><p>${event.description}</p>`;
+    card.innerHTML = `
+        <div class="card-image">
+            <img src="${event.image}" alt="${event.title}">
+        </div>
+        <div class="card-content">
+            <h3>${event.title}</h3>
+            <p>${event.description}</p>
+        </div>
+    `;
     eventCardContainer.appendChild(card);
 });
 
@@ -34,4 +42,3 @@ prevButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
     eventCardContainer.scrollBy({ left: 250, behavior: "smooth" });
 });
-

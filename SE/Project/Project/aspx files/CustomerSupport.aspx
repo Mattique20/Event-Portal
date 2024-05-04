@@ -13,8 +13,8 @@
       <img src="../Images/logo.png" alt="FAST Logo" class="header-logo">  
         <h1>Fast Event Portal</h1>
       <nav>  
-        <asp:Button ID="btnHome" runat="server" Text="Home" />
-        <asp:Button ID="btnevents" runat="server" Text="Events" />
+        <asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
+        <asp:Button ID="btnevents" runat="server" Text="Events" OnClick="btnevents_Click" />
       </nav>
     </header>
         <h1 style="text-align: center;">ChatGPT Customer Support</h1>
