@@ -38,5 +38,15 @@ namespace SE
                 }
             }
         }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("About.aspx");
+        }
+
+        protected void btnevents_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StudentEvent.aspx");
+        }
     }
 }

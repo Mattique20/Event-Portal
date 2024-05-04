@@ -165,6 +165,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CSS\chat.css" />
+    <Content Include="CSS\HireOrganizer.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\Organizer.css" />
