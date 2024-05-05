@@ -30,3 +30,5 @@ and some other minor functionalities
 ## Technologies:
 
 The Project was made mainly in .NET C# for front-end and back-end, and a little bit of javascript sprinkled on top.
+
+We have use Microsoft SQL Server as our Database.
